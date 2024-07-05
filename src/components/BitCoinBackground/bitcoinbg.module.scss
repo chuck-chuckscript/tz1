@@ -1,0 +1,38 @@
+
+
+
+
+.bg{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  right: 5%;
+  z-index: -1;
+  width: 310px;
+  img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    &.litecoin{
+      top: 310px;
+      left: calc(310px * -0.8);
+      @media screen and (max-width: 500px) {
+        top: 150px;
+        left: calc(150px * -0.8);
+      }
+    }
+    &.ethereum{
+      top: calc(310px * 1.7);
+      @media screen and (max-width: 500px) {
+        top: calc(150px * 1.7);
+
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+   width: 150px;
+  }
+
+
+}
